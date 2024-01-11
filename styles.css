@@ -575,6 +575,97 @@
   }
 }
 
+.about {
+  background: #131313;
+  height: 100%;
+  padding: 10rem 0;
+}
+
+.about_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.about_header h1 {
+  background-color: #ff8177;
+  background-image: linear-gradient(to right, #ff0844 0%, #ffb199 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+}
+
+.about_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1300px;
+  padding: 50px 50px;
+}
+
+.about_container h1 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.about_container p {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.skills, .technologies {
+  justify-self: center;
+}
+
+@media screen and (max-width: 786px) {
+    .about {
+        height: 100%;
+    }
+
+    .about_header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 50px 20px;
+    }
+
+    .about_header h1, h2 {
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+
+    .about_container {
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 50px;
+    }
+
+    .skills, .technologies {
+        justify-self: left;
+    }
+
+    .about_container h1 {
+        font-size: 1.7rem;
+        margin-top: 3rem;
+    }
+}
+
+
 /* Footer CSS */
 .footer__container {
   background-color: #131313;
@@ -583,6 +674,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: auto;
 }
 
 #footer__logo {
@@ -595,6 +687,7 @@
 }
 
 .footer__links {
+  padding-top: 2rem;
   width: 100%;
   max-width: 1000px;
   display: flex;
@@ -616,6 +709,7 @@
   margin: 16px;
   box-sizing: border-box;
   width: 100%;
+  font-size: 1.2rem;
 }
 
 .footer__link--wrapper h1 {
@@ -632,6 +726,6 @@
 }
 
 .footer__link--items a:hover {
-  color: #e9e9e9;
-  transition: 0.3 ease-out;
+  color: #9518fc;
+  transition: all 0.3s ease;
 }
