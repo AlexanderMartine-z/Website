@@ -218,13 +218,9 @@
 .hero__heading span {
   background: #ee0979;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right,
-      #ff6a00,
-      #ee0979);
+  background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right,
-      #ff6a00,
-      #ee0979);
+  background: linear-gradient(to right, #ff6a00, #ee0979);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
@@ -237,13 +233,9 @@
   font-size: 60px;
   background: #da22ff;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right,
-      #9114ff,
-      #da22ff);
+  background: -webkit-linear-gradient(to right, #9114ff, #da22ff);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right,
-      #8f0eff,
-      #da22ff);
+  background: linear-gradient(to right, #8f0eff, #da22ff);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
@@ -308,13 +300,9 @@
   font-size: 4rem;
   background: #ff8177;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right,
-      #9114ff,
-      #da22ff);
+  background: -webkit-linear-gradient(to right, #9114ff, #da22ff);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right,
-      #8f0eff,
-      #da22ff);
+  background: linear-gradient(to right, #8f0eff, #da22ff);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
@@ -384,7 +372,7 @@
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  background-image: url("alexsite.png");
 }
 
 .fa-layer-group,
@@ -510,14 +498,30 @@
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
-  transition: 0.3s ease-in;
+  background-image: url("image.png");
+  background-position: center;
+  opacity: 0.6;
+  position: relative;
+  background-size: cover;
+}
+
+.services__card::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.services_content {
+  position: relative;
 }
 
 .services__card:nth-child(2) {
-  background: #1fa2ff;
-  background: -webkit-linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
-  background: linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
+  background-image: url("image2.png");
+  background-size: cover;
 }
 
 .services__card:nth-child(3) {
@@ -625,47 +629,49 @@
   margin-top: 1rem;
 }
 
-.skills, .technologies {
+.skills,
+.technologies {
   justify-self: center;
 }
 
 @media screen and (max-width: 786px) {
-    .about {
-        height: 100%;
-    }
+  .about {
+    height: 100%;
+  }
 
-    .about_header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin: 0 auto;
-        padding: 0px 50px 20px;
-    }
+  .about_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 50px 20px;
+  }
 
-    .about_header h1, h2 {
-        font-size: 2.5rem;
-        margin-top: 3rem;
-    }
+  .about_header h1,
+  h2 {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+  }
 
-    .about_container {
-        display: grid;
-        grid-template-columns: auto;
-        width: 100%;
-        margin: 0 auto;
-        padding: 20px 50px;
-    }
+  .about_container {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 50px;
+  }
 
-    .skills, .technologies {
-        justify-self: left;
-    }
+  .skills,
+  .technologies {
+    justify-self: left;
+  }
 
-    .about_container h1 {
-        font-size: 1.7rem;
-        margin-top: 3rem;
-    }
+  .about_container h1 {
+    font-size: 1.7rem;
+    margin-top: 3rem;
+  }
 }
-
 
 /* Footer CSS */
 .footer__container {
